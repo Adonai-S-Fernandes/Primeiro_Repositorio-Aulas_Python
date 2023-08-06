@@ -1,0 +1,8 @@
+print(''*24)
+print('')
+print('Conversor de Medidas')
+print('')
+tempc = (float(input('Informe a temperatura em Graus Celsius (°C): ')))
+print(f'A partir da temperatura de {tempc}°C, a conversão dela em Fahrenheit se transformará em {(tempc*1.8)+32}°F')
+print('')
+print(''*24)

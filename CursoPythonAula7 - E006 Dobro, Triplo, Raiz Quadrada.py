@@ -1,0 +1,10 @@
+print('====================================')
+print('')
+print('======== Super Computador ========')
+num = (int(input('Digite um número, para ele ser calculado: ')))
+print('O Dobro do número {}, é {}'.format(num, (num*2)))
+print('O Triplo do número {}, é {}'.format(num, (num*3)))
+print('A Raiz Quadrada do número {}, é {:.2f}'.format(num, (num**(1/2))))
+
+print('')
+print('====================================')

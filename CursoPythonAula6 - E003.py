@@ -1,0 +1,17 @@
+print('======================================')
+print('')
+print('Bem vindo ao nosso SITE-03.\nVocê acaba de ser contratrado.\nVamos te testar agora.')
+print('')
+num1 = int(input('Digite um número: ')) 
+numum = input('Digite-o Novamente: ')
+print(numum.isnumeric())
+print('')
+num2 = int(input('Digite outro número: '))
+numdois = input('Digite-o Novamente: ')
+print(numdois.isnumeric())
+soma = num1 + num2
+print('')
+print('A soma do número {}, e do {}, resulta em: {}'.format(num1, num2, soma))
+
+print('')
+print('======================================')

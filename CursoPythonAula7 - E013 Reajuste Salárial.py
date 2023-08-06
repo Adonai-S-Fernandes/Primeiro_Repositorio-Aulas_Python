@@ -1,0 +1,31 @@
+print(''*24)
+print('')
+print('=====================')
+print('HyperSalarialModifier')
+print('=====================')
+print('')
+print('Este é um programa, que permite o ajuste salárial de qualquer empregado. \nSelecione entre as opções de [Boost] e [Debuff], para aumentar ou diminuir o salário respectivamente.') 
+print('-'*15)
+print('Selecione entre as opções para o Reajuste Salárial: \n[Boost] Selecione para definir um aumento salarial. \n[Debuff] Selecione para definir uma diminuição Salarial.')
+resp = (str(input('Digite o comando aqui (Escreva "Boost" ou "Debuff"): ')))
+if resp == 'Boost':
+    print('-'*15)
+    print('Você escolheu a opção [Boost], para um aumento salarial.')
+    sala = (float(input('Informe o salário do funcionario: ')))
+    porc = (int(input('Informe a porcentagem, para o aumento salarial [Somento o número]: ')))
+    resu = sala*porc/100
+    print(''*15)
+    print(f'O Salário inicial de RS${sala:.2f} do funcionario, recebeu um aumento de {porc}%. \nO seu novo salário é de RS${sala+resu:.2f}. \nUm total de RS${resu:.2f} foram adicionados ao salário do funcionario.')
+elif resp == 'Debuff':
+    print('-'*15)
+    print('Você escolheu a opção [Debuff], para um desconto salarial.')
+    sala = (float(input('Informe o salário do funcionario: ')))
+    porc = (int(input('Informe a porcentagem, para o desconto salarial [Somento o número]: ')))
+    resu = sala*porc/100
+    print(''*15)
+    print(f'O Salário inicial de RS${sala:.2f} do funcionario, recebeu um desconto de {porc}%. \nO seu novo salário é de RS${sala-resu:.2f}. \nUm total de RS${resu:.2f} foram descontados do salário do funcionario.')
+else:
+    print('-'*15)
+    print('Você cometeu algum erro. \nTente novamente, escreva da exata forma requerida. \nex: Boost')
+print('')
+print(''*24)
